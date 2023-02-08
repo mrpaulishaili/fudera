@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 export interface Props {
   price: number;
@@ -17,11 +17,11 @@ const ProductCards: React.FC<Props> = ({
 }) => {
   return (
     <div className="max-w-xs pb-2 outline outline-[#042940] relative">
-      <div className="bg-[#fff] flex justify-center items-center py-4 relative">
+      <div className="bg-[#fff] h-56 max-w-xs flex justify-center items-center py-4 relative">
         <img
           src={cardImage}
           alt={`${title}`}
-          className="max-w-xs h-56 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 z-30"
+          className="h-full w-full transition ease-in-out delay-150 duration-300 hover:-translate-y-1 object-contain hover:scale-110 z-30"
         />
       </div>
       <div className="px-4">
